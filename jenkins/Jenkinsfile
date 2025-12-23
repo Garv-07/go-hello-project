@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "yourdockerhub/hello-go"
+        IMAGE_NAME = "garvshah07/hello-go"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yourname/go-hello-devops.git'
+                git 'https://github.com/Garv-07/go-hello-project'
             }
         }
 
